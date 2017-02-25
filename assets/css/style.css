@@ -1,0 +1,25 @@
+		.jumbotron {
+			background-image: url(../images/lucy.jpg);
+		    background-size: cover;
+		}
+	
+		.jumbotron h1 {
+			color: coral;
+		}
+
+		.jumbotron p {
+			color: coral;
+			font-weight: bold;
+		}
+
+		h3, h4 {
+			text-align: center;
+		}
+
+		.button-center {
+			text-align: center;
+		}
+
+		.height {
+			height: 380px;
+		}
