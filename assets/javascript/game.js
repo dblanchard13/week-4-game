@@ -7,7 +7,7 @@ var crystalFour;
 var totalScore;
 
 function reset(){
-ranNum = Math.floor((Math.random()*121));
+ranNum = Math.floor((Math.random()*102))+19;
 crystalOne = Math.ceil((Math.random()*12));
 crystalTwo = Math.ceil((Math.random()*12));
 crystalThree = Math.ceil((Math.random()*12));
