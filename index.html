@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Diamonds</title>
+  <title>Diamonds</title>
 
-	<link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"
+  >
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-	<link rel="stylesheet" href="assets/css/style.css">
-
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 </head>
 <body>
 
-<div class="container">
-	<div class="jumbotron">
-	  <h1>Lucy in the sky</h1>
-	</div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Lucy in the sky</h1>
+    </div>
 
-<div class="row">
-	<div class = "col-md-4">
-		<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A25yQPHgC35WNnnOUqFhgVR" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	</div>
-	<div class="col-md-8">
-         <div class="panel panel-default height">
-             <div class="panel-heading"><h3>Lucy's Diamonds</h3></div>
-                <div class="panel-body button-center buttonDiv">
-					<button id="one" type="button" class="btn btn-default btn-lg" >
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
+    <div class="row">
+      <div class="col-md-4">
+        <iframe
+          src="https://embed.spotify.com/?uri=spotify%3Atrack%3A25yQPHgC35WNnnOUqFhgVR"
+          width="300"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+        ></iframe>
+      </div>
 
-					<button id="two" type="button" class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-					</button>
+      <div class="col-md-8">
 
-					<button id="three" type="button" class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
-					</button>
+        <div class="panel panel-default height">
 
-					<button id="four" type="button" class="btn btn-default btn-lg">
-						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-					</button>
-							<div class="row text">
-								<h4>You will be given a random number at the start of the game.</h4>
-								<h4>There are four diamonds above. By clicking on a diamond you will add a specific amount of points to your total score.</h4>
-								<h4>You help Lucy by matching your total score to the random number. However, if your total score goes over the random number, Lucy's health diminishes...</h4>
-								<h4>The value of each crystal is hidden from you until you click on it.</h4>
-							</div>
-                </div>
+          <div class="panel-heading">
+            <h3>Lucy's Diamonds</h3>
+          </div>
+
+            <div class="panel-body button-center buttonDiv">
+
+              <button id="one" type="button" class="btn btn-default btn-lg" >
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </button>
+
+              <button id="two" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+              </button>
+
+              <button id="three" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+              </button>
+
+              <button id="four" type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+              </button>
+
+              <div class="row text">
+                <h4>You will be given a random number at the start of the game.</h4>
+
+                <h4>There are four diamonds above. By clicking on a diamond you will add a specific amount of points to your total score.</h4>
+
+                <h4>You help Lucy by matching your total score to the random number. However, if your total score goes over the random number, Lucy's health diminishes...</h4>
+
+                <h4>The value of each crystal is hidden from you until you click on it.</h4>
+              </div>
 
           </div>
 
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-         <div class="panel panel-default">
-             <div class="panel-heading"><h3>Random Number</h3></div>
-                <div id="randomBox" class="panel-body button-center">
-                </div>
-          </div>
-    </div>
-    <div class="col-md-4">
-         <div class="panel panel-default">
-             <div class="panel-heading"><h3>Your Total Score</h3></div>
-                <div id="totalScoreBox" class="panel-body button-center">
-                </div>
-          </div>
-    </div>
-	<div class="col-md-4">
-		<div class="panel panel-default">
-			<div class="panel-heading"><h3>Lucy's Health</h3></div>
-			<div class="panel-body">
-			<div class=row>
-				<div class="col-md-4" id="winsScore"></div>
-				<div class="col-md-4" id="lossesScore"></div>
-				<div class="col-md-4" id="message"></div>
-			</div>
+        </div>
 
-<!-- 				<div id="winsScore"></div>
-				<div id="lossesScore"></div>
-				<div id="message"></div> -->
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3>Random Number</h3>
+          </div>
+          
+          <div id="randomBox" class="panel-body button-center"></div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3>Your Total Score</h3>
+          </div>
+
+          <div id="totalScoreBox" class="panel-body button-center"></div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3>Lucy's Health</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class=row>
+              <div class="col-md-4" id="winsScore"></div>
+              <div class="col-md-4" id="lossesScore"></div>
+              <div class="col-md-4" id="message"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
  
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
-</html> 
+</html>
